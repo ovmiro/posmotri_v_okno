@@ -13,18 +13,17 @@ html {
     block-size: 100%;
     margin: auto;
     color: #fff;
-    font-family: "Fira Sans Condensed", sans-serif;
+    font-family: Fira Sans Condensed, sans-serif;
     font-size: 18px;
     background-color: #1b1919;
 
     /*Центрую по середине страницы*/
     display: flex;
     justify-content: center;
+    align-content: flex-end;
     align-items: center;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
 }
 
 h1,
@@ -101,7 +100,7 @@ img {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    margin-top: 23px;
+    margin-top: 15px;
     max-width: 711px;
     width: 100%;
 }
@@ -116,6 +115,7 @@ img {
     font-size: 18px;
     font-style: normal;
     line-height: normal;
+    padding-bottom: 6px;
 }
 
 .search-form__textfield {
@@ -142,7 +142,6 @@ img {
 }
 
 .search-form__textfield:focus {
-    border: 1px solid #fff;
     outline: none;
 }
 
@@ -153,6 +152,7 @@ img {
 .search-form__label {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 5px;
     width: fit-content;
     cursor: pointer;
@@ -175,7 +175,7 @@ img {
 
 .search-form__checkbox-list {
     display: flex;
-    margin-top: 6px;
+    margin-bottom: 5px;
     gap: 15px;
 }
 
@@ -201,7 +201,7 @@ img {
     border: 1px solid currentColor;
     color: #fff;
     text-align: center;
-    font-family: Fira Sans Condensed;
+    font-family: Fira Sans Condensed, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -239,7 +239,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 35px;
+    margin-top: 10px;
     gap: 26px;
     max-width: 399px;
     max-height: 534px;
@@ -249,7 +249,7 @@ img {
 
 .title {
     color: #fff;
-    font-family: Oswald;
+    font-family: Oswald, sans-serif;
     font-size: 75px;
     font-style: normal;
     font-weight: 700;
@@ -266,9 +266,10 @@ img {
     max-width: 398px;
     width: 100%;
     flex-direction: column;
-    gap: 35px;
+    gap: 30px;
     position: relative;
-    overflow-y: scroll;
+    overflow: hidden auto;
+    overflow: hidden visible;
 }
 
 .content__video-card {
@@ -277,9 +278,8 @@ img {
 }
 
 .content__video-card-title {
-    padding-left: 2px;
     color: #fff;
-    font-family: Oswald;
+    font-family: Oswald, sans-serif;
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
@@ -289,9 +289,8 @@ img {
 }
 
 .content__video-card-description {
-    padding-left: 2px;
     color: #fff;
-    font-family: Fira Sans Condensed;
+    font-family: Fira Sans Condensed, sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -322,7 +321,7 @@ img {
 }
 
 .content__card-link:active {
-    color: #545050;
+    background-color: #545050;
 }
 
 .content__card-link:focus-visible {
