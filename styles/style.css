@@ -67,7 +67,7 @@ img {
 
 .content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-end;
     width: 1140px;
 }
