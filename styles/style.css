@@ -239,10 +239,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 10px;
     gap: 26px;
-    max-width: 399px;
-    max-height: 534px;
     height: 100%;
     width: 100%;
 }
@@ -263,13 +260,12 @@ img {
 
 .content__list {
     display: flex;
-    max-width: 398px;
     width: 100%;
+    height: 295px;
     flex-direction: column;
     gap: 30px;
     position: relative;
-    overflow: hidden auto;
-    overflow: hidden visible;
+    overflow: auto;
 }
 
 .content__video-card {
@@ -278,6 +274,9 @@ img {
 }
 
 .content__video-card-title {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
     color: #fff;
     font-family: Oswald, sans-serif;
     font-size: 30px;
@@ -286,6 +285,7 @@ img {
     line-height: 100%; /* 30px */
     text-transform: uppercase;
     text-decoration: none;
+    margin-bottom: 3px;
 }
 
 .content__video-card-description {
